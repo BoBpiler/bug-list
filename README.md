@@ -2,12 +2,15 @@
 # Compilers Optimization Bugs reported by BoBpiler Team
 
 이 문서는 BoBpiler 팀이 발견하고 보고한 컴파일러 최적화 버그 목록입니다. 
+
 This document is a list of compiler optimization bugs discovered and reported by the BoBpiler Team.
 
 아래 표에는 버그가 발견된 컴파일러, 아키텍처, 버그의 유형, 그리고 상세 내용을 확인할 수 있는 링크가 포함되어 있습니다. 
+
 The table below includes the compiler where the bug was found, the architecture, the type of bug, and a link to detailed information.
 
 이 문서에 포함된 각 버그 리포트는 해당 분야의 전문가들이 문제를 해결하고, 소프트웨어 개발 과정에서 발생할 수 있는 유사한 문제와 잠재적인 보안 취약점을 예방하는 데 기여할 수 있습니다.
+
 Each bug report contained in this document can contribute to experts in the field solving the issue and preventing similar issues and potential security vulnerabilities during the software development process.
 
 | Compiler | Arch | Bug Type | Link |
