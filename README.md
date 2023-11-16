@@ -3,7 +3,8 @@
 
 | Compiler | Arch | Bug Type | Link |
 | -------- | ------------ | -------- | ---- |
-| MSVC | x86-64 | 부정확한 인라인 호출 순서 | https://developercommunity.visualstudio.com/t/O1-Optimization-Leads-to-Incorrect-Funct/10469220?sort=newest |
+| MSVC | x86-64 | 부정확한 인라인 호출 순서 | https://developercommunity.visualstudio.com/t/
+O1-Optimization-Leads-to-Incorrect-Funct/10469220?sort=newest |
 | MSVC | x86-64 | 다른 변수 주소 동일 인식 | https://developercommunity.visualstudio.com/t/Memory-reference-error-due-to-excessive/10477735?sort=newest&page=1 |
 | MSVC | x86-64 | 무한 루프 | https://developercommunity.visualstudio.com/t/Optimization-Levels-O1-O2-Ox-Incorrect/10478781?sort=newest |
 | MSVC | x86-64 | 상수의 부정확한 계산 및 비교 | https://developercommunity.visualstudio.com/t/Incorrectly-compiled-comparison-and-cons/10480723?sort=newest |
