@@ -2,7 +2,7 @@
 
 
 | Compiler | Arch | Bug Type | Link |
-| -------- | ------------ | --------------------------- | ---- |
+| --- | --- | --------------------------- | ---- |
 | gcc | s390x |     부정확한 연산    | https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112 |
 | gcc | s390x |     부정확한 연산    | https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274 |
 | gcc | s390x |     부정확한 연산    | https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329 |
