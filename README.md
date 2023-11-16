@@ -13,6 +13,7 @@ The table below includes the compiler where the bug was found, the architecture,
 
 Each bug report contained in this document can contribute to experts in the field solving the issue and preventing similar issues and potential security vulnerabilities during the software development process.
 
+---
 | Compiler | Arch | Bug Type | Link |
 | --- | --- | --------------------------- | ---- |
 | gcc | s390x |     부정확한 연산    | [Link](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
