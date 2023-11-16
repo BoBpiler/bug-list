@@ -8,16 +8,16 @@ This document contains a compilation of optimization bugs in various compilers d
 ---
 | Compiler | Arch | Bug Type | Link |
 | --- | --- | --------------------------- | ---- |
-| gcc | s390x |     부정확한 연산    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
-| gcc | s390x |     부정확한 연산    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
-| gcc | s390x |     부정확한 연산    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
-| llvm | x86-64 |   무한 루프 제거    | [Details](https://github.com/llvm/llvm-project/issues/66307) |
-| llvm | arm64 |    포인터 역참조 생략   | [Details](https://github.com/llvm/llvm-project/issues/69294) |
-| llvm | riscv |    부호 확장 문제   | [Details](https://github.com/llvm/llvm-project/issues/68855) |
-| llvm | powerpc64 |    부호 확장 문제   | [Details](https://github.com/llvm/llvm-project/issues/71030) |
-| llvm | mips64el |     부정확한 연산    | [Details](https://github.com/llvm/llvm-project/issues/69328) |
-| llvm | mips64 |   부정확한 연산    | [Details](https://github.com/llvm/llvm-project/issues/70495) |
-| llvm | s390x |    부정확한 연산    | [Details](https://github.com/llvm/llvm-project/issues/72018) |
+| GCC | s390x |     부정확한 연산    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
+| GCC | s390x |     부정확한 연산    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
+| GCC | s390x |     부정확한 연산    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
+| LLVM | x86-64 |   무한 루프 제거    | [Details](https://github.com/llvm/llvm-project/issues/66307) |
+| LLVM | arm64 |    포인터 역참조 생략   | [Details](https://github.com/llvm/llvm-project/issues/69294) |
+| LLVM | riscv |    부호 확장 문제   | [Details](https://github.com/llvm/llvm-project/issues/68855) |
+| LLVM | powerpc64 |    부호 확장 문제   | [Details](https://github.com/llvm/llvm-project/issues/71030) |
+| LLVM | mips64el |     부정확한 연산    | [Details](https://github.com/llvm/llvm-project/issues/69328) |
+| LLVM | mips64 |   부정확한 연산    | [Details](https://github.com/llvm/llvm-project/issues/70495) |
+| LLVM | s390x |    부정확한 연산    | [Details](https://github.com/llvm/llvm-project/issues/72018) |
 | MSVC | arm64 |    부정확한 연산    | [Details](https://developercommunity.visualstudio.com/t/C-ARM64-Optimization-Bug/10503910) |
 | MSVC | arm64 |    부정확한 연산    | [Details](https://developercommunity.visualstudio.com/t/Inconsistent-Outputs-in-ARM64-C-Progra/10505191) |
 | MSVC | arm64 |    부정확한 연산    | [Details](https://developercommunity.visualstudio.com/t/ARM64-MSVC-Compiler-Optimization-Leads-t/10508262) |
