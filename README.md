@@ -1,7 +1,7 @@
 # Compilers Optimization Bugs reported by BoBpiler Team
 
 
-| Compiler | Architecture | Bug Type | Link |
+| Compiler | Arch | Bug Type | Link |
 | -------- | ------------ | -------- | ---- |
 | MSVC | x86-64 | 부정확한 인라인 호출 순서 | https://developercommunity.visualstudio.com/t/O1-Optimization-Leads-to-Incorrect-Funct/10469220?sort=newest |
 | MSVC | x86-64 | 다른 변수 주소 동일 인식 | https://developercommunity.visualstudio.com/t/Memory-reference-error-due-to-excessive/10477735?sort=newest&page=1 |
