@@ -3,7 +3,7 @@
 
 이 문서는 BoBpiler 팀이 발견하고 보고한 다양한 컴파일러의 최적화 버그들을 모아놓은 목록입니다. 각 컴파일러, 아키텍처, 버그 유형 및 상세 링크를 포함하고 있습니다. 이러한 버그 리포트는 해당 분야의 전문가들이 문제를 해결하고 소프트웨어 개발 과정에서 발생할 수 있는 유사한 문제와 잠재적인 보안 취약점을 예방하는 데 기여할 수 있습니다.
 
-This document contains a compilation of optimization bugs in various compilers discovered and reported by the BoBpiler Team. It includes the compiler, architecture, type of bug, and a link to further details. Each bug report can assist experts in resolving issues, thereby helping to prevent similar issues and potential security vulnerabilities in the software development process.
+This document contains a compilation of various compiler optimization bugs discovered and reported by the BoBpiler Team. It includes the compiler, architecture, type of bug, and a link to further details. Each bug report can assist experts in resolving issues, thereby helping to prevent similar issues and potential security vulnerabilities in the software development process.
 
 ---
 | Compiler | Arch | Bug Type | Link |
