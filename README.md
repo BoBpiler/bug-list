@@ -11,7 +11,6 @@ This document contains a compilation of various compiler optimization bugs disco
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
-| LLVM | X86-64 |   Infinite Loop Elimination (무한 루프 제거)    | [Details](https://github.com/llvm/llvm-project/issues/66307) |
 | LLVM | Arm64 |    Pointer Dereference Omission (포인터 역참조 생략)   | [Details](https://github.com/llvm/llvm-project/issues/69294) |
 | LLVM | Risc-v |    Sign/Unsign Extension Issue (부호 확장 문제)   | [Details](https://github.com/llvm/llvm-project/issues/68855) |
 | LLVM | Powerpc64 |    Sign/Unsign Extension Issue (부호 확장 문제)   | [Details](https://github.com/llvm/llvm-project/issues/71030) |
