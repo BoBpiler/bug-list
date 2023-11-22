@@ -21,7 +21,7 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 **MSVC:** 
 - 버그 상태는 `UC (Under Consideration)`, `UI (Under Investigation)`, 또는 `Fixed` 등으로 표시됩니다. [`UC`](https://developercommunity.visualstudio.com/t/Comparison-of-incorrect-register-values/10480763?sort=newest)는 MSVC 팀이 문제를 인지하고 내부적으로 버그로 등록했으며, 수정을 고려 중임을 나타냅니다. 문제가 내부적으로 해결되면, 상태는 `Fixed in Pending Release`로 변경됩니다. 수정사항이 Visual Studio의 발표된 버전에 포함되면, 상태는 `Fixed`로 업데이트됩니다.
 - The bug status is categorized as `UC (Under Consideration)`, `UI (Under Investigation)`, or `Fixed`. [`UC`](https://developercommunity.visualstudio.com/t/Comparison-of-incorrect-register-values/10480763?sort=newest) indicates that the MSVC team has acknowledged the issue and created an internal bug to track it, and they are considering fixing it. Once the bug is resolved internally, the status will be updated to `Fixed in Pending Release`. After the fix is included in the released version of Visual Studio, the status will be changed to `Fixed`.
-
+![Under Consideration](png/Under_Consideration.png)
 
 ---
 | Compiler | Arch | Bug Type | Status | Link |
