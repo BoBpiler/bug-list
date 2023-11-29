@@ -10,31 +10,75 @@ GCC 컴파일러 관련 버그는 Bugzilla에서, LLVM 컴파일러 관련 버�
 Bugs related to the GCC compiler are being communicated with developers on Bugzilla, while those related to the LLVM compiler are discussed on Git Issues. For MSVC, developers acknowledge bugs and categorize their status as 'Under Consideration' or 'Under Investigation', which is then announced through bots.
 
 ### Explanation of Bug Status / 버그 상태 설명
-**GCC (Bugzilla):** 
-- 버그질라에서는 버그 상태가 다양하게 표시될 수 있지만, 여기서는 간단하게 `Open`으로 표기했습니다. 이는 버그가 인식되었고 해결을 기다리는 상태를 의미합니다.
-- Although Bugzilla shows various statuses for bugs, here we have simplified it as `Open`. This indicates that the bug has been recognized and is awaiting resolution.
+**GCC Bugzilla 버그 상태 설명:** 
 
-**LLVM (Git Issue):** 
-- 버그 상태는 `Open` 또는 `Closed (Fixed)`로 표시됩니다. `Open`는 버그가 아직 해결되지 않았음을, `Closed (Fixed)`는 버그가 해결되었음 혹은 해당 이슈가 종료되었음을 나타냅니다.
-- The bug status is designated as `Open` or `Closed (Fixed)`. `Open` signifies that the bug is still pending resolution, while `Closed (Fixed)` indicates that the bug has been resolved or the issue has been closed.
+WAITING
 
-**MSVC:** 
-- 버그 상태는 `UC (Under Consideration)`, `UI (Under Investigation)`, 또는 `Fixed` 등으로 표시됩니다. [`UC`](https://developercommunity.visualstudio.com/t/Comparison-of-incorrect-register-values/10480763?sort=newest)는 MSVC 팀이 문제를 인지하고 내부적으로 버그로 등록했으며, 수정을 고려 중임을 나타냅니다. 문제가 내부적으로 해결되면, 상태는 `Fixed in Pending Release`로 변경됩니다. 수정사항이 Visual Studio의 발표된 버전에 포함되면, 상태는 `Fixed`로 업데이트됩니다.
-- The bug status is categorized as `UC (Under Consideration)`, `UI (Under Investigation)`, or `Fixed`. [`UC`](https://developercommunity.visualstudio.com/t/Comparison-of-incorrect-register-values/10480763?sort=newest) indicates that the MSVC team has acknowledged the issue and created an internal bug to track it, and they are considering fixing it. Once the bug is resolved internally, the status will be updated to `Fixed in Pending Release`. After the fix is included in the released version of Visual Studio, the status will be changed to `Fixed`.
+- WAITING (대기 중): 버그가 보고되었지만, 아직 개발팀이나 커뮤니티에서 확인되지 않았습니다. 이 상태는 버그의 유효성 검증이 필요함을 의미합니다.
+
+- WAITING: The bug has been reported but not yet verified by the development team or the community. This status indicates that validation of the bug's legitimacy is needed.
+
+UNCONFIRMED
+
+- UNCONFIRMED (미확인): 버그가 등록되었으나 아직 유효성이 확인되지 않은 상태입니다. 'canconfirm' 권한을 가진 사용자가 이 버그를 검증할 수 있습니다.
+
+- UNCONFIRMED: The bug is registered but its validity has not yet been confirmed. Users with 'canconfirm' permissions can verify this bug.
+- **S390x의 경우 GCC bugzilla에서 Waiting, Uncomfirmed를 받았지만, 동일한 케이스에 대해서 LLVM에서 버그로 인정받았습니다.**
+
+wrong-code 태그
+
+- wrong-code (잘못된 코드): 이 태그는 컴파일러가 소스 코드를 잘못 해석하거나 잘못된 코드를 생성하는 경우에 사용됩니다. 일반적으로 컴파일러의 오류나 최적화 문제로 인해 발생한 부정확한 연산 결과를 나타냅니다.
+
+- wrong-code: This tag is used when the compiler misinterprets source code or generates incorrect code. It typically indicates inaccurate computation results due to errors or optimization issues in the compiler.
+
+**LLVM Git Issue 태그 설명:** 
+
+Open (태그명)
+
+- Open (태그명): LLVM에서 사용되는 다양한 태그는 버그의 특성이나 상태를 나타냅니다. 예를 들어, 'llvm:optimizations'는 최적화 관련 문제를, 'miscompilation'은 컴파일 오류를 지칭합니다.
+
+- Open (Tag Name): Various tags used in LLVM indicate the nature or status of the bug. For example, 'llvm:optimizations' refers to optimization-related issues, while 'miscompilation' denotes compilation errors.
+
+Closed (Fixed)
+
+- Closed (Fixed) (해결됨): 버그가 해결되었거나 관련 이슈가 종료되었습니다. 'Fixed'는 버그에 대한 수정이 완료되었음을 의미합니다.
+
+- Closed (Fixed): The bug has been resolved or the related issue has been closed. 'Fixed' indicates that the bug has been rectified and no further action is required.
+
+**MSVC 버그 상태 설명:** 
+
 ![Under Consideration](png/Under_Consideration.png)
+
+UC (Under Consideration)
+
+- UC (고려 중): 이 상태는 MSVC 팀이 버그를 인지하고 내부적으로 등록했으며, 수정 여부를 고려 중임을 의미합니다. UC 상태는 문제가 확인되었으나 아직 구체적인 해결 방안이 결정되지 않았음을 나타냅니다.
+
+- UC (Under Consideration): Indicates that the MSVC team is aware of the bug and it has been registered internally. The team is considering whether to fix it. The UC status means that the issue has been acknowledged, but a specific resolution has yet to be determined.
+
+UI (Under Investigation)
+
+- UI (조사 중): 버그가 현재 조사 중이며, 원인과 해결 방안을 파악하기 위한 단계에 있음을 의미합니다. 이 상태는 문제의 본질과 해결책이 아직 명확하지 않음을 나타냅니다.
+
+- UI (Under Investigation): Indicates that the bug is currently being investigated, and the team is in the process of identifying the cause and potential solutions. This status signifies that the nature of the issue and its resolution are not yet clear.
+
+Fixed
+
+- Fixed (해결됨): 버그에 대한 수정이 완료되었으며, 해당 수정사항이 Visual Studio의 공식 발표된 버전에 포함되었음을 나타냅니다. 이 상태는 문제가 완전히 해결되었고, 추가적인 조치가 필요 없음을 의미합니다.
+
+- Fixed: Indicates that the bug has been fixed and the fix is included in the officially released version of Visual Studio. This status means that the issue has been fully resolved and no further action is required.
 
 ---
 | Compiler | Arch | Bug Type | Status | Link |
 | --- | --- | --------------------------- | ---- | ---- |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
+| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (WAITING, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
+| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
+| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
 | LLVM | Arm64 |    Pointer Dereference Omission (포인터 역참조 생략)   | Open | [Details](https://github.com/llvm/llvm-project/issues/69294) |
 | LLVM | Risc-v |    Sign/Unsign Extension Issue (부호 확장 문제)   | Closed (Fixed) | [Details](https://github.com/llvm/llvm-project/issues/68855) |
-| LLVM | Powerpc64 |    Sign/Unsign Extension Issue (부호 확장 문제)   | Open | [Details](https://github.com/llvm/llvm-project/issues/71030) |
-| LLVM | Mips64el |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://github.com/llvm/llvm-project/issues/69328) |
-| LLVM | Mips64 |   Inaccurate Computation (부정확한 연산)    | Open | [Details](https://github.com/llvm/llvm-project/issues/70495) |
-| LLVM | S390x |    Inaccurate Computation (부정확한 연산)    | Open | [Details](https://github.com/llvm/llvm-project/issues/72018) |
+| LLVM | Powerpc64 |    Sign/Unsign Extension Issue (부호 확장 문제)   | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/71030) |
+| LLVM | Mips64el |     Inaccurate Computation (부정확한 연산)    | Open (llvm:optimizations) | [Details](https://github.com/llvm/llvm-project/issues/69328) |
+| LLVM | Mips64 |   Inaccurate Computation (부정확한 연산)    | Open (miscompilation, llvm:optimizations)| [Details](https://github.com/llvm/llvm-project/issues/70495) |
+| LLVM | S390x |    Inaccurate Computation (부정확한 연산)    | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/72018) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/C-ARM64-Optimization-Bug/10503910) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/Inconsistent-Outputs-in-ARM64-C-Progra/10505191) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/ARM64-MSVC-Compiler-Optimization-Leads-t/10508262) |
