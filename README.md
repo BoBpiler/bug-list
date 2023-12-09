@@ -10,6 +10,23 @@ GCC 컴파일러 관련 버그는 Bugzilla에서, LLVM 컴파일러 관련 버�
 Bugs related to the GCC compiler are being communicated with developers on Bugzilla, while those related to the LLVM compiler are discussed on Git Issues. For MSVC, developers acknowledge bugs and categorize their status as 'Under Consideration' or 'Under Investigation', which is then announced through bots.
 
 ## Explanation of Bug Status / 버그 상태 설명
+
+| 시스템/플랫폼            | 상태 분류   | 태그                               | 상세 설명                                                                      |
+|:-------------------------|:------------|:-----------------------------------|:-------------------------------------------------------------------------------|
+| GCC Bugzilla             | Open        | New                                | 최근 보고된 새로운 버그 상태.                              |
+| GCC Bugzilla             | Open        | WAITING                            | 버그 보고 후 검증 대기 중. 개발팀 또는 커뮤니티 확인 필요.  |
+| GCC Bugzilla             | Open        | UNCONFIRMED                        | 버그 등록됐으나 아직 유효성 확인되지 않음. 'canconfirm' 권한을 가진 사람의 검증 필요. |
+| GCC Bugzilla             | Open        | wrong-code                         | 컴파일러가 소스 코드를 잘못 해석하거나 잘못된 코드를 생성할 때 사용되는 태그.  |
+| LLVM Git Issue           | Closed      | Fixed                              | 문제가 해결되어 이슈가 닫힌 상태. 버그 수정 완료.                              |
+| LLVM Git Issue           | Open        | miscompilation                     | 컴파일러가 소스 코드의 컴파일을 잘못 처리하여 발생하는 오류를 지칭함.                                    |
+| LLVM Git Issue           | Open        | llvm:optimizations                 | 최적화 관련 문제를 나타내는 태그. 컴파일러의 최적화 과정 중 발생하는 문제점을 다룸.                                              |
+| MSVC Developer Community | Open        | Under Consideration(UC)            | 버그가 인지되었으며 수정 여부를 고려 중인 상태. 'UC'는 버그에 대한 수정 우선순위가 아직 결정되지 않았음을 나타냄.                                |
+| MSVC Developer Community | Open        | Under Investigation(UI)            | 버그의 원인 및 해결 방안을 조사 중인 상태. 'UI'는 버그가 현재 조사 중이며 해결책이 명확하지 않음을 의미함.                                     |
+| MSVC Developer Community | Closed      | Fixed                              | 문제가 해결되어 공식 버전에 포함된 상태. 'Fixed'는 버그가 완전히 해결되었고 추가 조치가 필요 없음을 의미함.                                       |
+
+<details><summary>버그 상태 상세 설명</summary>
+<p>
+
 ### GCC Bugzilla 버그 상태 설명: 
 
 **WAITING**
@@ -66,6 +83,10 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 - Fixed (해결됨): 버그에 대한 수정이 완료되었으며, 해당 수정사항이 Visual Studio의 공식 발표된 버전에 포함되었음을 나타냅니다. 이 상태는 문제가 완전히 해결되었고, 추가적인 조치가 필요 없음을 의미합니다.
 
 - Fixed: Indicates that the bug has been fixed and the fix is included in the officially released version of Visual Studio. This status means that the issue has been fully resolved and no further action is required.
+</p>
+</details>
+
+
 
 ---
 | Compiler | Arch | Bug Type | Status | Link |
