@@ -5,7 +5,7 @@
 
 This document contains a compilation of various compiler optimization bugs discovered and reported by the BoBpiler Team using the [BoBpiler Fuzzer](https://github.com/BoBpiler/BoBpiler-Fuzzer). It includes the compiler, architecture, type of bug, and a link to further details. Each bug report can assist experts in resolving issues, thereby helping to prevent similar issues and potential security vulnerabilities in the software development process.
 
-GCC 컴파일러 관련 버그는 Bugzilla에서, LLVM 컴파일러 관련 버그는 Git Issue에서 개발자들과 소통 중입니다. MSVC의 경우, 개발자들이 버그를 확인하고, 상태를 'Under Consideration' 또는 'Under Investigation' 등으로 분류하여 봇을 통해 공지합니다.
+GCC 컴파일러 관련 버그는 Bugzilla에서, LLVM 컴파일러 관련 버그는 Git Issue에서 개발자들과 소통 중입니다. MSVC의 경우, **개발자들이 버그를 확인**하고, 상태를 'Under Consideration' 또는 'Under Investigation' 등으로 분류하여 **봇을 통해 공지합니다.**
 
 Bugs related to the GCC compiler are being communicated with developers on Bugzilla, while those related to the LLVM compiler are discussed on Git Issues. For MSVC, developers acknowledge bugs and categorize their status as 'Under Consideration' or 'Under Investigation', which is then announced through bots.
 
@@ -24,7 +24,7 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 | MSVC Developer Community | Open        | Under Investigation(UI)            | 버그의 원인 및 해결 방안을 조사 중인 상태. 'UI'는 버그가 현재 조사 중이며 해결책이 명확하지 않음을 의미함.                                     |
 | MSVC Developer Community | Closed      | Fixed                              | 문제가 해결되어 공식 버전에 포함된 상태. 'Fixed'는 버그가 완전히 해결되었고 추가 조치가 필요 없음을 의미함.                                       |
 
-<details><summary>버그 상태 상세 설명</summary>
+<details><summary><h2>버그 상태 상세 설명</h2></summary>
 <p>
 
 ### GCC Bugzilla 버그 상태 설명: 
@@ -89,6 +89,7 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 
 
 ---
+## Reported Bug List / 버그 리스트
 | Compiler | Arch | Bug Type | Status | Link |
 | --- | --- | --------------------------- | ---- | ---- |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (WAITING, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
