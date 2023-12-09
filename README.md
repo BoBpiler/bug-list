@@ -92,12 +92,15 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 ## Reported Bug List / 버그 리스트
 | Compiler | Arch | Bug Type | Status | Link |
 | --- | --- | --------------------------- | ---- | ---- |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (WAITING, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
+| GCC | Risc-V |     Inaccurate Computation (부정확한 연산)    | Open (New, needs-bisection, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112758) |
+| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (WAITING, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
+| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112665) |
 | LLVM | Arm64 |    Pointer Dereference Omission (포인터 역참조 생략)   | Open | [Details](https://github.com/llvm/llvm-project/issues/69294) |
 | LLVM | Risc-v |    Sign/Unsign Extension Issue (부호 확장 문제)   | Closed (Fixed) | [Details](https://github.com/llvm/llvm-project/issues/68855) |
 | LLVM | Powerpc64 |    Sign/Unsign Extension Issue (부호 확장 문제)   | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/71030) |
+| LLVM | Powerpc64 |    Inaccurate Computation (부정확한 연산)   | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/74915) |
 | LLVM | Mips64el |     Inaccurate Computation (부정확한 연산)    | Open (llvm:optimizations) | [Details](https://github.com/llvm/llvm-project/issues/69328) |
 | LLVM | Mips64 |   Inaccurate Computation (부정확한 연산)    | Open (miscompilation, llvm:optimizations)| [Details](https://github.com/llvm/llvm-project/issues/70495) |
 | LLVM | S390x |    Inaccurate Computation (부정확한 연산)    | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/72018) |
@@ -105,6 +108,7 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/Inconsistent-Outputs-in-ARM64-C-Progra/10505191) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/ARM64-MSVC-Compiler-Optimization-Leads-t/10508262) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/MSVC-ARM64-Compiler-Incorrectly-Optimize/10510611) |
+| MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/Inconsistent-Comparison-Results-of-Unsig/10521901) |
 | MSVC | X86-64 |   Incorrect Inline Call Order (부정확한 인라인 호출 순서)    | UC | [Details](https://developercommunity.visualstudio.com/t/O1-Optimization-Leads-to-Incorrect-Funct/10469220?sort=newest) |
 | MSVC | X86-64 |   Misidentification of Different Variable Addresses (다른 변수 주소 동일 인식)     | UC | [Details](https://developercommunity.visualstudio.com/t/Memory-reference-error-due-to-excessive/10477735?sort=newest&page=1) |
 | MSVC | X86-64 |   Infinite Loop Elimination (무한 루프 제거)   | UC | [Details](https://developercommunity.visualstudio.com/t/Optimization-Levels-O1-O2-Ox-Incorrect/10478781?sort=newest) |
