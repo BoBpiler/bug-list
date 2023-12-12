@@ -5,6 +5,14 @@
 
 This document contains a compilation of various compiler optimization bugs discovered and reported by the BoBpiler Team using the [BoBpiler Fuzzer](https://github.com/BoBpiler/BoBpiler-Fuzzer). It includes the compiler, architecture, type of bug, and a link to further details. Each bug report can assist experts in resolving issues, thereby helping to prevent similar issues and potential security vulnerabilities in the software development process.
 
+컴파일러 버그 취약점 PoC 및 스텔스 백도어 시나리오: 
+
+현재 문서에 정리된 보고한 버그들을 기반으로 취약점 PoC(Proof of Concepts)와 스텔스 백도어 시나리오를 개발하였습니다. 이 레포지토리, [컴파일러 버그 취약점 PoC 및 스텔스 백도어 시나리오](https://github.com/BoBpiler/compiler-bug-vulnerability), 에서는 컴파일러 최적화 버그들을 어떻게 소프트웨어 내 취약점 및 스텔스 백도어로 활용할 수 있는지에 대한 연구를 상세히 다루고 있습니다.
+
+Compiler Bug Vulnerable PoCs and Stealth Backdoor Scenarios: 
+
+The bugs reported in this document have been further explored to develop Proof of Concepts (PoCs) and stealth backdoor scenarios. This repository, [Compiler Bug Vulnerable PoCs and Stealth Backdoor Scenarios](https://github.com/BoBpiler/compiler-bug-vulnerability), details the studies conducted on these reported bugs, demonstrating how they can be exploited to create vulnerabilities and stealth backdoors in software.
+
 GCC 컴파일러 관련 버그는 Bugzilla에서, LLVM 컴파일러 관련 버그는 Git Issue에서 개발자들과 소통 중입니다. MSVC의 경우, **개발자들이 버그를 확인**하고, 상태를 'Under Consideration' 또는 'Under Investigation' 등으로 분류하여 **봇을 통해 공지합니다.**
 
 Bugs related to the GCC compiler are being communicated with developers on Bugzilla, while those related to the LLVM compiler are discussed on Git Issues. For MSVC, developers acknowledge bugs and categorize their status as 'Under Consideration' or 'Under Investigation', which is then announced through bots.
