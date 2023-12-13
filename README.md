@@ -100,11 +100,14 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 ## Reported Bug List / 버그 리스트
 | Compiler | Arch | Bug Type | Status | Link |
 | --- | --- | --------------------------- | ---- | ---- |
+| ICX/ICPX | X86-64 |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://community.intel.com/t5/Intel-C-Compiler/Incorrect-results-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1552977#M41578) |
+| ICX/ICPX | X86-64 |     Compiler Crash (크래시)    | Open | [Details](https://community.intel.com/t5/Intel-C-Compiler/Segmentation-Fault-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1553036#M41580) |
 | GCC | Risc-V |     Inaccurate Computation (부정확한 연산)    | Open (New, needs-bisection, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112758) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (WAITING, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
 | GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112665) |
+| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112986) |
 | LLVM | Arm64 |    Pointer Dereference Omission (포인터 역참조 생략)   | Open | [Details](https://github.com/llvm/llvm-project/issues/69294) |
 | LLVM | Risc-v |    Sign/Unsign Extension Issue (부호 확장 문제)   | Closed (Fixed) | [Details](https://github.com/llvm/llvm-project/issues/68855) |
 | LLVM | Powerpc64 |    Sign/Unsign Extension Issue (부호 확장 문제)   | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/71030) |
