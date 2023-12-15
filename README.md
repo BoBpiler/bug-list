@@ -48,7 +48,6 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 - UNCONFIRMED (미확인): 버그가 등록되었으나 아직 유효성이 확인되지 않은 상태입니다. 'canconfirm' 권한을 가진 사용자가 이 버그를 검증할 수 있습니다.
 
 - UNCONFIRMED: The bug is registered but its validity has not yet been confirmed. Users with 'canconfirm' permissions can verify this bug.
-- **S390x의 경우 GCC bugzilla에서 Waiting, Uncomfirmed를 받았지만, 동일한 케이스에 대해서 LLVM에서 버그로 인정받았습니다.**
 
 **wrong-code keyword**
 
@@ -103,20 +102,12 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 | ICX/ICPX | X86-64 |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://community.intel.com/t5/Intel-C-Compiler/Incorrect-results-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1552977#M41578) |
 | ICX/ICPX | X86-64 |     Compiler Crash (크래시)    | Open | [Details](https://community.intel.com/t5/Intel-C-Compiler/Segmentation-Fault-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1553036#M41580) |
 | GCC | Risc-V |     Inaccurate Computation (부정확한 연산)    | Open (New, needs-bisection, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112758) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (WAITING, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112112) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112274) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112329) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112665) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED, 	wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112986) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112996) |
-| GCC | S390x |     Inaccurate Computation (부정확한 연산)    | Open (UNCONFIRMED) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112998) |
 | LLVM | Arm64 |    Pointer Dereference Omission (포인터 역참조 생략)   | Open | [Details](https://github.com/llvm/llvm-project/issues/69294) |
 | LLVM | Risc-v |    Sign/Unsign Extension Issue (부호 확장 문제)   | Closed (Fixed) | [Details](https://github.com/llvm/llvm-project/issues/68855) |
 | LLVM | Powerpc64 |    Sign/Unsign Extension Issue (부호 확장 문제)   | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/71030) |
 | LLVM | Powerpc64 |    Inaccurate Computation (부정확한 연산)   | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/74915) |
 | LLVM | Mips64el |     Inaccurate Computation (부정확한 연산)    | Open (llvm:optimizations) | [Details](https://github.com/llvm/llvm-project/issues/69328) |
 | LLVM | Mips64 |   Inaccurate Computation (부정확한 연산)    | Open (miscompilation, llvm:optimizations)| [Details](https://github.com/llvm/llvm-project/issues/70495) |
-| LLVM | S390x |    Inaccurate Computation (부정확한 연산)    | Open (miscompilation) | [Details](https://github.com/llvm/llvm-project/issues/72018) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/C-ARM64-Optimization-Bug/10503910) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/Inconsistent-Outputs-in-ARM64-C-Progra/10505191) |
 | MSVC | Arm64 |    Inaccurate Computation (부정확한 연산)    | UC | [Details](https://developercommunity.visualstudio.com/t/ARM64-MSVC-Compiler-Optimization-Leads-t/10508262) |
