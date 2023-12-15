@@ -100,7 +100,7 @@ Bugs related to the GCC compiler are being communicated with developers on Bugzi
 | Compiler | Arch | Bug Type | Status | Link |
 | --- | --- | --------------------------- | ---- | ---- |
 | ICX/ICPX | X86-64 |     Inaccurate Computation (부정확한 연산)    | Open | [Details](https://community.intel.com/t5/Intel-C-Compiler/Incorrect-results-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1552977#M41578) |
-| ICX/ICPX | X86-64 |     Compiler Crash (크래시)    | Open | [Details](https://community.intel.com/t5/Intel-C-Compiler/Segmentation-Fault-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1553036#M41580) |
+| ICX/ICPX | X86-64 |     Compiler Crash (크래시)    | Fixed | [Details](https://community.intel.com/t5/Intel-C-Compiler/Segmentation-Fault-in-optimization-levels-O3-and-Ofast-for-icpx/m-p/1553036#M41580) |
 | GCC | Risc-V |     Inaccurate Computation (부정확한 연산)    | Open (New, needs-bisection, wrong-code) | [Details](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=112758) |
 | LLVM | Arm64 |    Pointer Dereference Omission (포인터 역참조 생략)   | Open | [Details](https://github.com/llvm/llvm-project/issues/69294) |
 | LLVM | Risc-v |    Sign/Unsign Extension Issue (부호 확장 문제)   | Closed (Fixed) | [Details](https://github.com/llvm/llvm-project/issues/68855) |
